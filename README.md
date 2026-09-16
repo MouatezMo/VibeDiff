@@ -5,19 +5,21 @@
 ![Termux](https://img.shields.io/badge/made%20for-Termux%20%7C%20Linux-green.svg)
 ![Dependencies](https://img.shields.io/badge/deps-stdlib%20%2B%20ripgrep-lightgrey.svg)
 
-**Local snapshots and GitHub inspired precision Diff for any project.**
+**Local checkpoints, snapshots and GitHub inspired precision Diff for any project.**
 
-You have a project folder. You change a few files. Later you want to know exactly what changed, restore an older state, or compare two distant versions.
+You have a project folder. You make changes. Before the next big change, you want a reliable **checkpoint**. Later you want to know exactly what changed, compare versions, or return to an earlier state.
 
-**VibeDiff gives you snapshots, Diff, restore and a clean Terminal workflow in one Python file.**
+**VibeDiff gives you checkpoints, versioned snapshots, Diff, restore and a clean Terminal workflow in one Python file.**
 
 ## Features
 
-📦 **SAVE**  Create versioned snapshots of any project.
+📍 **CHECKPOINTS**  Save a known good state before making risky or experimental changes.
 
-🔄 **UPDATE**  Save the next version and automatically compare it with the previous one.
+📦 **SNAPSHOTS**  Keep complete project states under version names such as `v0.2.9` and `v0.3.0`.
 
-🔍 **COMPARE**  Compare any two saved versions.
+🔄 **UPDATE**  Save the next version and automatically compare it with the previous snapshot.
+
+🔍 **COMPARE**  Compare any two saved versions, even when many versions are between them.
 
 ♻️ **RESTORE**  Completely replace the project with any saved snapshot.
 
@@ -70,15 +72,17 @@ python3 ~/vibediff.py
 
 ## Workflow
 
+Use a checkpoint whenever you reach a state you may want to return to:
+
 ```text
-NEW PROJECT
-     ↓
+CHECKPOINT
+    ↓
 SAVE v0.1.0
-     ↓
-change your project
-     ↓
+    ↓
+make changes
+    ↓
 UPDATE v0.2.0
-     ↓
+    ↓
 automatic Diff
 ```
 
