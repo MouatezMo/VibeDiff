@@ -5,6 +5,14 @@
 ![Termux](https://img.shields.io/badge/made%20for-Termux%20%7C%20Linux-green.svg)
 ![Dependencies](https://img.shields.io/badge/deps-stdlib%20%2B%20ripgrep-lightgrey.svg)
 
+<video
+  src="https://github.com/user-attachments/assets/4e480d2a-d11c-4b06-ad67-fb98c9014ffc"
+  controls
+  muted
+  loop
+  width="100%">
+</video>
+
 **Local checkpoints, snapshots and GitHub inspired precision Diff for any project.**
 
 You have a project folder. You make changes. Before the next big change, you want a reliable **checkpoint**. Later you want to know exactly what changed, compare versions, or return to an earlier state.
